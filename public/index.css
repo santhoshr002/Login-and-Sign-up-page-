@@ -1,0 +1,35 @@
+@import "mobstyle.css" screen and (max-width: 768px);
+
+.welcome{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    
+}
+.log{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center; 
+    
+    margin-top: 1% ;
+    margin-left: 38%;
+    max-width: max-content;
+    border : double;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+
+    padding-left: 2%;
+    padding-right : 2%;
+
+    box-shadow: 10px 12px #888888;
+
+    cursor: help;
+}   
+
+

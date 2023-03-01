@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>demo</title>
+        <link rel="stylesheet" href="index.css">
+        <!--script src="login.js"></script-->
+
+    </head>
+    <body>
+        <div class="welcome"><h1>Welcome !</h1></div>
+            <div class="container">
+                <div >
+                    <div class="log"> 
+                      <h3>Create account </h3>
+                    </div>
+                    <br>
+                    <form method="post" action ='/api/create'>
+                        <label for="username" >username : </label>
+                        <input type="text" name="username" placeholder="enter username" id="username" required ><br><br>
+
+                        <label for="password"> password  :  </label>
+                        <input type="password" name="password" placeholder="enter password" id="password" required>
+                      
+                        <br><br><br>
+                       
+                        <div class="log">
+                            <!-- <input type="submit" value="submit" > -->
+                            <button >submit</button>
+                        </div><br><hr>
+
+                        <!--div class="log">or</div-->
+                    </form>
+
+                    <div class="log"> 
+                      <h3>Login in into your account</h3>
+                    </div>
+                    <form method="post" action ='/api/Login'>
+                      
+                      <label for="username" >username : </label>
+                      <input type="text" name="username" placeholder="enter username" id="username" required ><br><br>
+
+                      <label for="password"> password  :  </label>
+                      <input type="password" name="password" placeholder="enter password" id="password" required>
+                    
+                      <br><br><br>
+                     
+                      <div class="log">
+                          <button >submit</button>
+                      </div>
+                          <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+       
+      
+    </body>
+    
+    
+</html>
+
+
+
+
+
+<!--!DOCTYPE html>
+<html>
+  <head>
+    <title>My Form</title>
+  </head>
+  <body>
+    <h1>My Form</h1>
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <script>
+      const form = document.getElementById('myForm');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault(); // prevent form submission
+
+        // get form input values
+        const nameInput = document.getElementById('name').value;
+        const emailInput = document.getElementById('email').value;
+
+        // perform form validation
+        if (nameInput === '') {
+          alert('Please enter your name');
+          return;
+        }
+
+        if (emailInput === '') {
+          alert('Please enter your email');
+          return;
+        }
+
+        if (!isValidEmail(emailInput)) {
+          alert('Please enter a valid email address');
+          return;
+        }
+
+        // if input passes validation, submit the form
+        form.submit();
+      });
+
+      function isValidEmail(email) {
+        // regular expression for validating email format
+        const emailRegex = /^\S+@\S+\.\S+$/;
+        return emailRegex.test(email);
+      }
+    </script>
+  </body>
+</html-->
